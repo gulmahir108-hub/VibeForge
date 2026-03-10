@@ -3,7 +3,7 @@ import Stripe from 'stripe';
 import { createServerClient } from '@/utils/supabase/server';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2020-08-27',
+  apiVersion: '2026-02-25.clover',
 });
 
 export async function POST(request: NextRequest) {
